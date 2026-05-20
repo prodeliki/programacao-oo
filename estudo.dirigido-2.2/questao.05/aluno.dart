@@ -1,1 +1,14 @@
+class Aluno extends Pessoa {
+  String matricula;
+  String curso;
 
+  Aluno(String nome, int idade, this.matricula, this.curso) : super(nome, idade);
+
+  @override
+  void exibirDados() {
+    print('Nome: $nome');
+    print('Idade: $idade');
+    print('Matricula: $matricula');
+    print('Curso: $curso');
+  }
+}
